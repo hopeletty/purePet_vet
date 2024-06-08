@@ -153,7 +153,8 @@ or
 </div>
 </div>
 <div class="card-body">
-<form method="POST" action="register.html">
+<form method="POST" action="register.php"></form>
+<!-- <form method="POST" action="register.html"> -->
 <input type="hidden" name="_token" value="D9lLjUOgp0TR2d6gefol7OyQT58coZolazSc1slF" autocomplete="off"> <div class="flex flex-col mb-3">
 <input type="text" name="username" class="form-control" placeholder="Username" aria-label="Name" value>
 </div>
@@ -201,5 +202,27 @@ Conditions</a>
 <script src="pure-dashboard.js"></script>
 ;
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387" integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ==" data-cf-beacon='{"rayId":"8869153d8f0629df","version":"2024.4.1","token":"1b7cbb72744b40c580f8633c6b62637e"}' crossorigin="anonymous"></script>
+<script>
+    document.querySelector('form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const name = document.querySelector('input[name="name"]').value;
+      const email = document.querySelector('input[name="email"]').value;
+      const password = document.querySelector('input[name="password"]').value;
+
+      const res = await fetch('/api/auth/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, password })
+      });
+
+      const data = await res.json();
+      if (res.status === 201) {
+        alert('Registration successful!');
+        window.location.href = 'login.html';
+      } else {
+        alert(data.message);
+      }
+    });
+</script>
 </body>
 </html>

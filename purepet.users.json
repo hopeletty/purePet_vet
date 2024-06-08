@@ -1,0 +1,170 @@
+[{
+  "_id": {
+    "$oid": "665d649d4a4a2811df64e36e"
+  },
+  "name": "User1",
+  "email": "user1@example.com",
+  "password": "password1",
+  "contact_number": "1234567890",
+  "pet_name": "Pet1",
+  "pet_type": "Dog"
+},
+{
+  "_id": {
+    "$oid": "665d649d4a4a2811df64e36f"
+  },
+  "name": "User2",
+  "email": "user2@example.com",
+  "password": "password2",
+  "contact_number": "1234567891",
+  "pet_name": "Pet2",
+  "pet_type": "Cat"
+},
+{
+  "_id": {
+    "$oid": "665d649d4a4a2811df64e370"
+  },
+  "name": "User3",
+  "email": "user3@example.com",
+  "password": "password3",
+  "contact_number": "1234567892",
+  "pet_name": "Pet3",
+  "pet_type": "Dog"
+},
+{
+  "_id": {
+    "$oid": "665d649d4a4a2811df64e371"
+  },
+  "name": "User4",
+  "email": "user4@example.com",
+  "password": "password4",
+  "contact_number": "1234567893",
+  "pet_name": "Pet4",
+  "pet_type": "Bird"
+},
+{
+  "_id": {
+    "$oid": "665d649d4a4a2811df64e372"
+  },
+  "name": "User5",
+  "email": "user5@example.com",
+  "password": "password5",
+  "contact_number": "1234567894",
+  "pet_name": "Pet5",
+  "pet_type": "Dog"
+},
+{
+  "_id": {
+    "$oid": "665d649d4a4a2811df64e373"
+  },
+  "name": "User6",
+  "email": "user6@example.com",
+  "password": "password6",
+  "contact_number": "1234567895",
+  "pet_name": "Pet6",
+  "pet_type": "Cat"
+},
+{
+  "_id": {
+    "$oid": "665d649d4a4a2811df64e374"
+  },
+  "name": "User7",
+  "email": "user7@example.com",
+  "password": "password7",
+  "contact_number": "1234567896",
+  "pet_name": "Pet7",
+  "pet_type": "Dog"
+},
+{
+  "_id": {
+    "$oid": "665d649d4a4a2811df64e375"
+  },
+  "name": "User8",
+  "email": "user8@example.com",
+  "password": "password8",
+  "contact_number": "1234567897",
+  "pet_name": "Pet8",
+  "pet_type": "Bird"
+},
+{
+  "_id": {
+    "$oid": "665d649d4a4a2811df64e376"
+  },
+  "name": "User9",
+  "email": "user9@example.com",
+  "password": "password9",
+  "contact_number": "1234567898",
+  "pet_name": "Pet9",
+  "pet_type": "Dog"
+},
+{
+  "_id": {
+    "$oid": "665d649d4a4a2811df64e377"
+  },
+  "name": "User10",
+  "email": "user10@example.com",
+  "password": "password10",
+  "contact_number": "1234567899",
+  "pet_name": "Pet10",
+  "pet_type": "Cat"
+},
+{
+  "_id": {
+    "$oid": "665e691d481c7178579a7d08"
+  },
+  "name": "Jonathan",
+  "email": "john@example.com",
+  "password": "$2b$10$3nRxTSNerjF56YfPaSbTdeD5qLeMDPHRJu1qQQTusYqjND5ys25V.",
+  "contact_number": "1234567890",
+  "pet_name": "Buddy",
+  "pet_type": "Dog",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665e6932481c7178579a7d0a"
+  },
+  "name": "Jonathan",
+  "email": "john@example.com",
+  "password": "$2b$10$LAy.4BgO2.2ke5Z8QqFV5e19LegLDsY5P.QcgL5z4t8r5RzBl7a6e",
+  "contact_number": "1234567890",
+  "pet_name": "Buddy",
+  "pet_type": "Dog",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665e699bbe6ad4af3205bb8a"
+  },
+  "name": "Jonathan",
+  "email": "john@example.com",
+  "password": "$2b$10$8/jZqmNxHLS/bFuJgqPTBeOEY/pJBicg7jCt2H7JEiCdw6oFFE8Vq",
+  "contact_number": "1234567890",
+  "pet_name": "Buddy",
+  "pet_type": "Dog",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665e6df2744d4076f162fe6d"
+  },
+  "name": "Hope",
+  "email": "hope@example.com",
+  "password": "$2b$10$NzyUJnjas5NOBEZ0HJo9lO/dSkTiCkcc3I6/xeW34xN5Ymdul0AKi",
+  "contact_number": "1234567890",
+  "pet_name": "Buddy",
+  "pet_type": "Dog",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665e76e424953ced0e5bc9a1"
+  },
+  "name": "Jonathan",
+  "email": "kjonmukisa@gmail.com",
+  "password": "$2b$10$mJW/9pmQsF33qo/E0eONAufYqhbd3/fHHKL1h1/6ue3ENsabagyHq",
+  "contact_number": "01065906985",
+  "pet_name": "Honey",
+  "pet_type": "Cat",
+  "__v": 0
+}]

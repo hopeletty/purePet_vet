@@ -1,0 +1,27 @@
+start the database with 
+>>mongosh "mongodb+srv://cluster0.imigswz.mongodb.net/" --apiVersion 1 --username kjonmukisa
+
+
+Show the database
+>>show dbs
+
+Detailed Database Information
+>>use <databasename>
+>>db.stats()
+
+Show the tables in th database
+>>show collections
+
+To see the contents of a specific collection, 
+use db.collectionName.find(). Replace collectionName 
+with the actual name of your collection.
+
+--Droping collections
+db.users.drop();  ## users is the collection name
+
+
+For purepet, make sure you run the server.js in hee directory 
+
+
+db.vet_hospitals.drop
+

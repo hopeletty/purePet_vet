@@ -142,5 +142,27 @@
     </div>
 </div>
 </main>
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        try {
+            const res = await fetch('/api/auth/profile', {
+                headers: { 'x-auth-token': localStorage.getItem('token') }
+            });
+    
+            if (!res.ok) {
+                throw new Error('Failed to fetch user profile');
+            }
+    
+            const user = await res.json();
+            document.getElementById('vet-name').innerText = `Dr. ${user.name}`;
+            document.getElementById('vet-role').innerText = user.role || 'Veterinary Doctor';
+            document.getElementById('vet-hospital').innerText = user.hospital || 'Animal Care Hospital';
+            document.getElementById('vet-phone').innerText = user.phone || '555-1234';
+            document.getElementById('vet-email').innerText = user.email;
+        } catch (error) {
+            console.error(error);
+        }
+    });
+    </script>
 </body>
 </html>

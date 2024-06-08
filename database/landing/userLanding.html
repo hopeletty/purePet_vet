@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, User!</h1>
+        <h2>Make a Reservation</h2>
+        <form id="reservationForm" class="form">
+            <div class="form__input-group">
+                <label for="hospital">Choose Hospital:</label>
+                <select id="hospital" name="hospital" class="form__input">
+                    <!-- Populate options dynamically from the database -->
+                </select>
+            </div>
+            <div class="form__input-group">
+                <label for="diagnosis">Diagnosis:</label>
+                <input type="text" id="diagnosis" name="diagnosis" class="form__input" required>
+            </div>
+            <div class="form__input-group">
+                <label for="reservation_date">Date:</label>
+                <input type="date" id="reservation_date" name="reservation_date" class="form__input" required>
+            </div>
+            <div class="form__input-group">
+                <label for="reservation_time">Time:</label>
+                <input type="time" id="reservation_time" name="reservation_time" class="form__input" required>
+            </div>
+            <button class="form__button" type="submit">Make Reservation</button>
+        </form>
+    </div>
+    <script src="src/user_dashboard.js"></script>
+</body>
+</html>

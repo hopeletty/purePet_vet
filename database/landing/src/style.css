@@ -1,0 +1,242 @@
+body {
+    --color-primary: #005b96; /* Blue */
+    --color-primary-dark: #03396c; /* Navy */
+    --color-secondary: #6497b1; /* Sky Blue */
+    --color-light: #b3cde0; /* Light Blue */
+    --color-dark: #011f4b; /* Dark Navy */
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --background-color: #f5f5f5;
+    --text-color: #333333;
+    --border-radius: 4px;
+    --sidebar-bg: #03396c; /* Navy for the sidebar */
+    --header-bg: #005b96; /* Blue for the header */
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    font-size: 18px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+}
+
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success {
+    color: var(--color-success);
+}
+
+.form__message--error {
+    color: var(--color-error);
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: var(--color-primary);
+    background: #ffffff;
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form__button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+    color: white;
+    transition: background 0.2s;
+}
+
+.form__button:hover {
+    background: var(--color-primary-dark);
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--sidebar-bg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sidebar .nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .nav-links li {
+    margin-bottom: 1rem;
+}
+
+.sidebar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .nav-links a:hover {
+    background-color: var(--color-primary-dark);
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+}
+
+.sidebar .nav-links a .icon {
+    margin-right: 0.5rem;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: var(--color-light);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-bg);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}
+
+.header h2 {
+    font-size: 2rem;
+}
+
+.header .search-logout {
+    display: flex;
+    align-items: center;
+}
+
+.header .search-logout input {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+}
+
+.header .search-logout .logout {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header .search-logout .logout:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card p {
+    margin: 0.5rem 0;
+}
+
+.table-container {
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

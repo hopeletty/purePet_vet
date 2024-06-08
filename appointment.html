@@ -506,5 +506,42 @@
     </div>
 </div>
 </main>
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const res = await fetch('/api/appointments', {
+            headers: { 'x-auth-token': localStorage.getItem('token') }
+        });
+
+        if (!res.ok) {
+            throw new Error('Failed to fetch appointments');
+        }
+
+        const appointments = await res.json();
+        const appointmentsList = document.getElementById('appointments-list');
+
+        appointments.forEach(appointment => {
+            const appointmentRow = document.createElement('tr');
+
+            appointmentRow.innerHTML = `
+                <td>${appointment.petName}</td>
+                <td>${appointment.ownerName}</td>
+                <td>${appointment.date}</td>
+                <td>${appointment.time}</td>
+                <td>
+                    <a href="#" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit appointment">
+                        Edit
+                    </a>
+                </td>
+            `;
+
+            appointmentsList.appendChild(appointmentRow);
+        });
+    } catch (error) {
+        console.error(error);
+    }
+});
+
+</script>
 </body>
 </html>
